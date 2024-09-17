@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thriller - Fluxograma Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> Videoclipe Thriller</h1>
+
+    <div class="flowchart" id="step1">
+        <!-- Bloco 1 -->
+        <div class="box">
+            <h3>1. Encontro Romântico</h3>
+            <p>Michael e sua namorada passeiam à noite em um clima romântico.</p>
+            <button onclick="nextStep('step2')">Continuar para Transformação</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step2" style="display: none;">
+        <!-- Bloco 2 -->
+        <div class="box">
+            <h3>2. Transformação</h3>
+            <p>Michael se transforma em um lobisomem e persegue a namorada.</p>
+            <button onclick="nextStep('step3')">Ir para Cena do Cinema</button>
+            <button onclick="nextStep('step1')">Voltar para Encontro Romântico</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step3" style="display: none;">
+        <!-- Bloco 3 -->
+        <div class="box">
+            <h3>3. Cena do Cinema</h3>
+            <p>A perseguição é revelada como parte de um filme que estão assistindo no cinema.</p>
+            <button onclick="nextStep('step4')">Ir para Caminhada Noturna</button>
+            <button onclick="nextStep('step2')">Voltar para Transformação</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step4" style="display: none;">
+        <!-- Bloco 4 -->
+        <div class="box">
+            <h3>4. Caminhada Noturna</h3>
+            <p>Após o filme, eles caminham por ruas desertas e escuras.</p>
+            <button onclick="nextStep('step5')">Avançar para Zumbis Surgem</button>
+            <button onclick="nextStep('step3')">Voltar para Cena do Cinema</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step5" style="display: none;">
+        <!-- Bloco 5 -->
+        <div class="box">
+            <h3>5. Zumbis Surgem</h3>
+            <p>Zumbis começam a sair dos túmulos e cercam Michael e sua namorada.</p>
+            <button onclick="nextStep('step6')">Avançar para Michael Zumbi</button>
+            <button onclick="nextStep('step4')">Voltar para Caminhada Noturna</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step6" style="display: none;">
+        <!-- Bloco 6 -->
+        <div class="box">
+            <h3>6. Michael Zumbi</h3>
+            <p>Michael se junta aos zumbis e começa a dançar.</p>
+            <button onclick="nextStep('step7')">Avançar para Dança dos Zumbis</button>
+            <button onclick="nextStep('step5')">Voltar para Zumbis Surgem</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step7" style="display: none;">
+        <!-- Bloco 7 -->
+        <div class="box">
+            <h3>7. Dança dos Zumbis</h3>
+            <p>Michael e os zumbis fazem a icônica coreografia de "Thriller".</p>
+            <button onclick="nextStep('step8')">Avançar para Fuga da Namorada</button>
+            <button onclick="nextStep('step6')">Voltar para Michael Zumbi</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step8" style="display: none;">
+        <!-- Bloco 8 -->
+        <div class="box">
+            <h3>8. Fuga da Namorada</h3>
+            <p>A namorada foge para uma casa abandonada, aterrorizada.</p>
+            <button onclick="nextStep('step9')">Avançar para Final Ambíguo</button>
+            <button onclick="nextStep('step7')">Voltar para Dança dos Zumbis</button>
+        </div>
+    </div>
+
+    <div class="flowchart" id="step9" style="display: none;">
+        <!-- Bloco 9 -->
+        <div class="box">
+            <h3>9. Final Ambíguo</h3>
+            <p>Michael parece normal até que ele se vira para a câmera com olhos de monstro.</p>
+            <button onclick="nextStep('step1')">Recomeçar a História</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
